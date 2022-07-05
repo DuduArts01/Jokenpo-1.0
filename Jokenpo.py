@@ -35,3 +35,5 @@ elif computador == 'TESOURA' and e == 'PAPEL':
     print(f'\033[31mEU GANHEI! \033[33mHAHAHA! \033[mVocê colocou \033[31m{e}\033[m e eu coloquei \033[32m{computador}\033[m')
 
 print('\nBora jogar novamente?')
+
+
