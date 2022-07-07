@@ -44,5 +44,3 @@ while novamente == 'S':
 
     print('\033[97m-\033[m' * 70)
     novamente = input('\nBora jogar novamente? [s/N] ').strip().upper()
-
-# removido alguns declarações if e print(computador)
