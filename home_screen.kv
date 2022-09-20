@@ -1,20 +1,30 @@
+#: include ./game_folder/game.kv 
+
+#: import Game game_folder.game.Game
+
 ScreenManager:
 
   # main.py / home_screen.kv
   Main_Menu:
 
+  # game.py / kv
+  Game:
 
 <Main_Menu>:
-  MDFloatLayout:
-    MDLabel:
-      
+  name: 'main_menu_screen'
+  MDFloatLayout:    
     MDFillRoundFlatIconButton:
       text: "Start"
       icon: "controller"
       text_color: "black"
-      icon_color: "red"
+      icon_color: "white"     
+      md_bg_color: "green" 
       size_hint: 0.3,0.09
+      icon_size: "32sp"
       pos_hint: {"center_x":.500, "center_y":.300}
+      on_release: root.Change_Screen()
+        
+
 
     MDLabel:
       text: "author: DuduArts"

@@ -5,6 +5,9 @@ class ScreenManager(ScreenManager):
     pass
 
 class Main_Menu(Screen):
+    def Change_Screen(self):
+        self.parent.transition.direction = 'left'
+        self.parent.current = 'game_screen'
     pass
 
 class jokenpo(App):
